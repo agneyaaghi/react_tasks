@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import New from './New';
+import New1 from './New1';
+import { Parent } from './parent';
+import Workparent from './Workparent';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <New1/> */}
+    {/* <Parent/> */}
+    <Workparent/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,25 @@
+.main1{
+      height:50% ;
+      display:flex;
+      gap: 50px;
+      justify-content: center;
+      margin-top:30px;
+      padding:20px ;
+      }
+.main2{
+      height:50% ;
+      display:flex;
+      gap: 50px;
+      margin-top:20px ; 
+      justify-content: center;             
+}
+.imgstyle{
+      border-radius: 50%;
+      display: block;
+}
+.d1{
+      background-color: antiquewhite;
+}  
+.d6{
+      background-color: antiquewhite;
+}  
