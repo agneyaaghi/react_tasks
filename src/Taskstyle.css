@@ -1,0 +1,16 @@
+.main1{
+       display:flex;
+       justify-content:center;
+       gap:50px;
+}
+
+.main2{
+      display:flex;
+      justify-content:center;
+      gap:50px;
+}
+
+.imgstyle{
+     border-radius: 50%;
+     display: block;
+}

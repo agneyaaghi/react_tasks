@@ -7,15 +7,31 @@ import New from './New';
 import New1 from './New1';
 import { Parent } from './parent';
 import Workparent from './Workparent';
-
+import Taskparent from './Taskparent';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Map from './Map';
+import Map2 from './Map2';
+import Todomap from './Todomap';
+import Newstate from './Newstate';
+import Newstate2 from './Newstate2';
+import Useeffect from './Useeffect';
+import Togglebtn from './Togglebtn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <New1/> */}
-    {/* <Parent/> */}
-    <Workparent/>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Map2/>}></Route>
+    <Route path='/about' element={<Map/>}></Route>
+    <Route path='/Task' element={<Taskparent/>}></Route>
+    <Route path='/todo' element={<Todomap/>}></Route>
+    <Route path='/newstate' element={<Newstate/>}></Route>
+    <Route path='/element' element={<Newstate2/>}></Route>
+    <Route path='/effect' element={<Useeffect/>}></Route>
+    <Route path='/toggle' element={<Togglebtn/>}></Route>
+  
+    </Routes></BrowserRouter>
   </React.StrictMode>
 );
 
