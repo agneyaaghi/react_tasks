@@ -12,10 +12,15 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Map from './Map';
 import Map2 from './Map2';
 import Todomap from './Todomap';
-import Newstate from './Newstate';
-import Newstate2 from './Newstate2';
-import Useeffect from './Useeffect';
+import Apitask from './Apitask';
+import Landingpage from './Landingpage';
 import Togglebtn from './Togglebtn';
+import Startup from './Startup';
+import Formone from './Formone';
+import Userlogin from './Userlogin';
+import Keyfile from './Keyfile';
+import Userregistration from './Userregistration';
+import WeatherAPI from './WeatherAPI';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,11 +31,15 @@ root.render(
     <Route path='/about' element={<Map/>}></Route>
     <Route path='/Task' element={<Taskparent/>}></Route>
     <Route path='/todo' element={<Todomap/>}></Route>
-    <Route path='/newstate' element={<Newstate/>}></Route>
-    <Route path='/element' element={<Newstate2/>}></Route>
-    <Route path='/effect' element={<Useeffect/>}></Route>
     <Route path='/toggle' element={<Togglebtn/>}></Route>
-  
+    <Route path='/apitask' element={<Apitask/>}></Route>
+    <Route path='/landing' element={<Landingpage/>}></Route>
+    <Route path='/estartup' element={<Startup/>}></Route>
+    <Route path='/formone' element={<Formone/>}></Route>
+    <Route path='/userlogin' element={<Userlogin/>}></Route>
+    <Route path='/keyfile' element={<Keyfile/>}></Route>
+    <Route path='/userregistration' element={<Userregistration/>}></Route>
+    <Route path='/Weatherapi' element={<WeatherAPI/>}></Route>
     </Routes></BrowserRouter>
   </React.StrictMode>
 );

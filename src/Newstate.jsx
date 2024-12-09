@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Newstate = () => {
+const Newstate=()=>{
                     const[data,setData]=useState(0)
                     let increment=()=>{
                                         setData(data+1)
@@ -8,9 +8,7 @@ const Newstate = () => {
                     let decrement=()=>{
                                         setData(data-1)
                     }
-
-
-  return (
+  return(
     <div>
                     <h2>{data}</h2>
                     <button onClick={increment}>increment</button>
