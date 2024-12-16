@@ -1,16 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import New from './New';
-import New1 from './New1';
-import { Parent } from './parent';
-import Workparent from './Workparent';
 import Taskparent from './Taskparent';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Map from './Map';
-import Map2 from './Map2';
 import Todomap from './Todomap';
 import Apitask from './Apitask';
 import Landingpage from './Landingpage';
@@ -21,13 +15,14 @@ import Userlogin from './Userlogin';
 import Keyfile from './Keyfile';
 import Userregistration from './Userregistration';
 import WeatherAPI from './WeatherAPI';
+import Movieapi from './Movieapi';
+import Movieapi2 from './Movieapi2.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <BrowserRouter>
    <Routes>
-    <Route path='/' element={<Map2/>}></Route>
     <Route path='/about' element={<Map/>}></Route>
     <Route path='/Task' element={<Taskparent/>}></Route>
     <Route path='/todo' element={<Todomap/>}></Route>
@@ -40,7 +35,9 @@ root.render(
     <Route path='/keyfile' element={<Keyfile/>}></Route>
     <Route path='/userregistration' element={<Userregistration/>}></Route>
     <Route path='/Weatherapi' element={<WeatherAPI/>}></Route>
-    </Routes></BrowserRouter>
+    <Route path='/Movieapi' element={<Movieapi/>}></Route>
+    <Route path='/movieapi2/:imdbID' element={<Movieapi2/>}></Route>
+   </Routes></BrowserRouter>
   </React.StrictMode>
 );
 
