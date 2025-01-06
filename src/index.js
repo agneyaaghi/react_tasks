@@ -17,11 +17,19 @@ import Userregistration from './Userregistration';
 import WeatherAPI from './WeatherAPI';
 import Movieapi from './Movieapi';
 import Movieapi2 from './Movieapi2.jsx';
+import Calculator from './Calculator.jsx';
+import Rendermain from './rendering/Rendermain.jsx';
+import Themeprovider from './context/Themeprovider.jsx';
+import New from './context/New.jsx';
+import { Provider } from 'react-redux';
+import { Count } from './redux/Count.jsx';
+import store from './redux/store.js';
+import Cart from './redux/cart.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
+   {/* <BrowserRouter>
    <Routes>
     <Route path='/about' element={<Map/>}></Route>
     <Route path='/Task' element={<Taskparent/>}></Route>
@@ -36,8 +44,24 @@ root.render(
     <Route path='/userregistration' element={<Userregistration/>}></Route>
     <Route path='/Weatherapi' element={<WeatherAPI/>}></Route>
     <Route path='/Movieapi' element={<Movieapi/>}></Route>
-    <Route path='/movieapi2/:imdbID' element={<Movieapi2/>}></Route>
-   </Routes></BrowserRouter>
+    <Route path='/Movieapi2/:imdbID' element={<Movieapi2/>}></Route>
+    <Route path='/Calculator' element={<Calculator/>}></Route>
+    <Route path='/render' element={<Rendermain/>}></Route>
+    <Route path='/cart' element={<Cart/>}></Route> 
+   </Routes>
+   </BrowserRouter> */}
+
+  {/*<Themeprovider>
+    <New></New>
+  </Themeprovider>*/}
+
+  <Provider store={store}>
+  <BrowserRouter>
+  <Routes>
+  <Route path='/cart' element={<Cart/>}></Route> 
+  </Routes>
+  </BrowserRouter>
+  </Provider>
   </React.StrictMode>
 );
 

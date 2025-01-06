@@ -1,0 +1,10 @@
+.light{
+                    background-color: antiquewhite;
+}
+.dark{
+                    background-color: black;
+                    color: white;
+}
+div{
+                    height: 500px;
+}

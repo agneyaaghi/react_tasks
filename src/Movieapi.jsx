@@ -57,5 +57,4 @@ const Movieapi = () => {
     </div>
   );
 };
-
 export default Movieapi;
